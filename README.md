@@ -1,24 +1,10 @@
-# README
+# Rails API Blog Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a demo application that uses a Rails 5 API application with
+ActiveModel::Serializers to build a JSON:API-compatible interface.
 
-Things you may want to cover:
+## References
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Tutorial - https://www.simplify.ba/articles/2016/06/18/creating-rails5-api-only-application-following-jsonapi-specification/
+* JSON:API - http://jsonapi.org/
+* ActiveModel::Serializers - https://github.com/rails-api/active_model_serializers
