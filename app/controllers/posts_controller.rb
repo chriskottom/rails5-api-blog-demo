@@ -16,6 +16,8 @@ class PostsController < ApplicationController
     end
 
     posts = posts.page(page_number)
-    render json: posts, meta: pagination_meta(posts), include: ['user']
+    render json: posts,
+           meta: pagination_meta(posts).merge(default_meta),
+           include: ['user']
   end
 end
