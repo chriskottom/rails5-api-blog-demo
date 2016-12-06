@@ -1,13 +1,7 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  full_name: MyString
-  password_digest: MyString
-  token: MyString
-  description: MyText
-
-two:
-  full_name: MyString
-  password_digest: MyString
-  token: MyString
-  description: MyText
+<% 6.times do |i| %>
+user_<%= i %>:
+  full_name: "User #<%= i %>"
+  password_digest: <%= BCrypt::Password.create('password') %>
+  token: <%= SecureRandom.base58(24) %>
+  description: "Description for User #<%= i %>"
+<% end %>
